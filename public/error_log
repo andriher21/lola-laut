@@ -1,0 +1,16 @@
+[30-Aug-2022 09:18:14 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:18:22 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:18:38 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:18:45 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:18:57 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:19:02 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:19:10 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:19:13 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:20:01 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionSavePath in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 199
+[30-Aug-2022 09:21:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionDriver in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 156
+[30-Aug-2022 09:21:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionDriver in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 156
+[30-Aug-2022 09:21:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionDriver in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 156
+[30-Aug-2022 09:21:46 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionDriver in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 156
+[30-Aug-2022 09:28:26 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Config\App::$sessionDriver in /home/regs2858/public_html/lltdemo/app/Config/App.php on line 156
+[04-Sep-2022 08:58:57 America/Chicago] PHP Fatal error:  Cannot declare class App\Models\VehicleModel, because the name is already in use in /home/regs2858/public_html/lltdemo/app/Models/MaterialModel.php on line 0
+[04-Sep-2022 08:59:19 America/Chicago] PHP Fatal error:  Cannot declare class App\Models\VehicleModel, because the name is already in use in /home/regs2858/public_html/lltdemo/app/Models/MaterialModel.php on line 0

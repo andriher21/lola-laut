@@ -1,0 +1,20 @@
+.card-primary {
+	border: 1px solid black;
+}
+
+.dataTables_filter {
+	display: none;
+}
+
+.flatpickr {
+	background-color: white;
+}
+
+table {
+	counter-reset: tableCount;
+}
+
+.counterCell::before {
+	counter-increment: tableCount;
+	content: counter(tableCount);
+}

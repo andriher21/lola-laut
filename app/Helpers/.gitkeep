@@ -1,0 +1,144 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * -----------------------------------------------------------------------
+ * Editor   : PhpStorm
+ * Date     : 4/16/2018
+ * Time     : 1:07 PM
+ * Authors  : Raymond L King Sr.
+ * -----------------------------------------------------------------------
+ *
+ * Class        Name
+ *
+ * @project     ci3blog
+ * @author      Raymond L King Sr.
+ * @link        http://www.procoversfx.com
+ * @copyright   Copyright (c) 2009 - 2018 Custom Software Designers, LLC.
+ * @license     http://www.procoversfx.com/license
+ * -----------------------------------------------------------------------
+ */
+
+// -----------------------------------------------------------------------
+
+/**
+ * objectToArray ()
+ *
+ * Usage:
+ *
+ * $array = objectToArray($your_object_data)
+ */
+if ( ! function_exists('objectToArray'))
+{
+    /**
+     * objectToArray ()
+     * -------------------------------------------------------------------
+     *
+     * @param  $data
+     * @return array
+     */
+    function objectToArray($data)
+    {
+        if (is_object($data))
+        {
+            /**
+             * Gets the properties of the given object
+             * with get_object_vars function
+             */
+            $data = get_object_vars($data);
+        }
+
+        /**
+         * Return array converted to object Using __FUNCTION__ (Magic constant)
+         * for recursive call
+         */
+        return (is_array($data))
+            ? array_map(__FUNCTION__, $data)
+            : $data;
+    }
+}
+
+// -----------------------------------------------------------------------
+
+/**
+ * arrayToObject ()
+ *
+ * Usage:
+ *
+ * $object = arrayToObject($your_array_data);
+ */
+if ( ! function_exists('arrayToObject'))
+{
+    /**
+     * arrayToObject ()
+     * -------------------------------------------------------------------
+     *
+     * @param  $data
+     * @return object
+     */
+    function arrayToObject($data)
+    {
+        /**
+         * Return array converted to object Using __FUNCTION__ (Magic constant)
+         * for recursive call
+         */
+        return (is_array($data))
+            ? (object) array_map(__FUNCTION__, $data)
+            : $data;
+    }
+}
+
+// -----------------------------------------------------------------------
+
+/**
+ * varDebug () - Add this method to a CodeIgniter Helper.
+ * -----------------------------------------------------------------------
+ *
+ * Formatted output of var_dump() or print_r() see comment below etc;
+ *
+ * Usage:
+ *
+ * varDebug($array or $object);
+ * exit();
+ *
+ */
+if ( ! function_exists('varDebug'))
+{
+    /**
+     * Debug Helper
+     * -------------------------------------------------------------------
+     * Outputs the given variable(s) with color formatting and location
+     *
+     * @param    mixed    - variables to be output
+     */
+    function varDebug()
+    {
+        list($callee) = debug_backtrace();
+
+        $arguments = func_get_args();
+
+        $total_arguments = func_num_args();
+
+        echo '<div><fieldset style="background: #fefefe !important; border:1px red solid; padding:15px">';
+        echo '<legend style="background:lightgrey; padding:5px;">'.$callee['file'].' @line: '.$callee['line'].'</legend><pre><code>';
+
+        $i = 0;
+        foreach ($arguments as $argument)
+        {
+            echo '<strong>Debug #'.++$i.' of '.$total_arguments.'</strong>: '.'<br>';
+
+            // You can also change this to print_r() if needed.
+            var_dump($argument);
+        }
+
+        echo "</code></pre></fieldset><div><br>";
+        exit;
+    }
+}
+
+/**
+ * -----------------------------------------------------------------------
+ * Filename: utility_helper.php
+ * Location: ./application/helpers/utility_helper.php
+ * -----------------------------------------------------------------------
+ */ 
